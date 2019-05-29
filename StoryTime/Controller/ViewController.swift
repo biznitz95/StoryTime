@@ -29,6 +29,8 @@ class ViewController: MainView {
             return
         }
         
+        
+        
         performSegue(withIdentifier: "goToVideo", sender: nil)
         
     }

@@ -13,6 +13,7 @@
 		08073FF5229DEC6C00996869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08073FF4229DEC6C00996869 /* Assets.xcassets */; };
 		08073FF8229DEC6C00996869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08073FF6229DEC6C00996869 /* LaunchScreen.storyboard */; };
 		08074000229DEF6800996869 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08073FFF229DEF6800996869 /* VideoController.swift */; };
+		080A95C0229F164000B06808 /* The Cookie Theft Story Final Animation_4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 080A95BF229F164000B06808 /* The Cookie Theft Story Final Animation_4.mp4 */; };
 		083BFFA8229EE48E009A11AA /* UIViewController+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BFFA7229EE48E009A11AA /* UIViewController+Functions.swift */; };
 		083BFFAA229EE611009A11AA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BFFA9229EE611009A11AA /* MainView.swift */; };
 		0843D1D4229F0B650078D784 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843D1D3229F0B650078D784 /* VideoView.swift */; };
@@ -27,6 +28,7 @@
 		08073FF7229DEC6C00996869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08073FF9229DEC6C00996869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08073FFF229DEF6800996869 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		080A95BF229F164000B06808 /* The Cookie Theft Story Final Animation_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Cookie Theft Story Final Animation_4.mp4"; sourceTree = "<group>"; };
 		083BFFA7229EE48E009A11AA /* UIViewController+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Functions.swift"; sourceTree = "<group>"; };
 		083BFFA9229EE611009A11AA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0843D1D3229F0B650078D784 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				083BFFA4229EE3CF009A11AA /* View */,
 				083BFFA3229EE3CA009A11AA /* Model */,
 				08073FED229DEC6B00996869 /* AppDelegate.swift */,
+				080A95BF229F164000B06808 /* The Cookie Theft Story Final Animation_4.mp4 */,
 				08073FF1229DEC6B00996869 /* Main.storyboard */,
 				08073FF4229DEC6C00996869 /* Assets.xcassets */,
 				08073FF6229DEC6C00996869 /* LaunchScreen.storyboard */,
@@ -169,6 +172,7 @@
 				08073FF8229DEC6C00996869 /* LaunchScreen.storyboard in Resources */,
 				08073FF5229DEC6C00996869 /* Assets.xcassets in Resources */,
 				08073FF3229DEC6B00996869 /* Main.storyboard in Resources */,
+				080A95C0229F164000B06808 /* The Cookie Theft Story Final Animation_4.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
