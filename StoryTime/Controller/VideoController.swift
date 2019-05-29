@@ -35,5 +35,10 @@ class VideoController: UIViewController {
         
         avPlayer.play()
     }
+    
+    // Lock Device in horizontal mode
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .landscape
+    }
 
 }

@@ -15,8 +15,6 @@ class MainView: UIViewController {
         // Do any additional setup after loading the view.
         
         keyboardDismiss()
-        
-        print(UIDevice.current.userInterfaceIdiom == .phone)
     }
     
 }
