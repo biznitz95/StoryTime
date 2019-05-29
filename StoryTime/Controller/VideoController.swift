@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import AVKit
 
-class VideoController: UIViewController {
+class VideoController: VideoView {
     
     // MARK: Private Constants
     
@@ -34,11 +34,6 @@ class VideoController: UIViewController {
         controller.showsPlaybackControls = false
         
         avPlayer.play()
-    }
-    
-    // Lock Device in horizontal mode
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return .landscape
     }
 
 }
