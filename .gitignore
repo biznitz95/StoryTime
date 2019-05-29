@@ -81,3 +81,14 @@ fastlane/test_output
 
 iOSInjectionProject/
 
+# Videos
+#
+# Ignore video files, too large
+
+*.mp4
+
+# Other Folders
+#
+
+xcuserdata/
+
