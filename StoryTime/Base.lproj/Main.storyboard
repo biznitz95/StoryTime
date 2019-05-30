@@ -111,12 +111,122 @@
                     <connections>
                         <outlet property="ageTextField" destination="DVU-q4-XrK" id="T9L-GJ-tp6"/>
                         <outlet property="nameTextField" destination="eN6-XK-e7z" id="KLN-hF-sRD"/>
-                        <segue destination="QOq-Gb-QYp" kind="show" identifier="goToVideo" id="Gh4-eZ-2mH"/>
+                        <segue destination="aE6-sl-Xdu" kind="show" identifier="goToExperienceSelection" id="CMg-OO-qG6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.23188405797103" y="137.94642857142856"/>
+            <point key="canvasLocation" x="-829" y="139"/>
+        </scene>
+        <!--Experience View Controller-->
+        <scene sceneID="d9q-ds-wD1">
+            <objects>
+                <viewController id="aE6-sl-Xdu" customClass="ExperienceViewController" customModule="StoryTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0uo-E3-fBs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L2q-FJ-8YO">
+                                <rect key="frame" x="0.0" y="80" width="414" height="816"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reusableExperienceCell" id="fFy-Sv-DDy">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fFy-Sv-DDy" id="Hsk-aG-qBX">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose an experience" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgn-LB-ZMg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L2q-FJ-8YO" firstAttribute="trailing" secondItem="ZZU-vS-J7T" secondAttribute="trailing" id="2Ta-Cf-fc3"/>
+                            <constraint firstAttribute="bottom" secondItem="L2q-FJ-8YO" secondAttribute="bottom" id="P6u-3l-CJD"/>
+                            <constraint firstItem="L2q-FJ-8YO" firstAttribute="top" secondItem="Jgn-LB-ZMg" secondAttribute="bottom" id="ZjO-Ob-wQE"/>
+                            <constraint firstItem="L2q-FJ-8YO" firstAttribute="leading" secondItem="ZZU-vS-J7T" secondAttribute="leading" id="bs4-oA-n1q"/>
+                            <constraint firstItem="Jgn-LB-ZMg" firstAttribute="top" secondItem="ZZU-vS-J7T" secondAttribute="top" id="bxI-24-dJG"/>
+                            <constraint firstItem="Jgn-LB-ZMg" firstAttribute="leading" secondItem="ZZU-vS-J7T" secondAttribute="leading" id="cyx-bp-7En"/>
+                            <constraint firstItem="Jgn-LB-ZMg" firstAttribute="trailing" secondItem="ZZU-vS-J7T" secondAttribute="trailing" id="ghU-am-Bge"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZZU-vS-J7T"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="rQd-eu-Rud"/>
+                        <barButtonItem title="Item" id="6YP-SC-bPe"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="lWh-AO-wRV"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="MNW-jt-OIi" id="FPl-XT-GAG"/>
+                        <outlet property="tableView" destination="L2q-FJ-8YO" id="vOm-aE-wTq"/>
+                        <segue destination="QOq-Gb-QYp" kind="show" identifier="goToVideoFromExperience" id="6Qk-g5-raL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3C-3C-5Go" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="MNW-jt-OIi">
+                    <connections>
+                        <outlet property="delegate" destination="aE6-sl-Xdu" id="EYt-FO-tck"/>
+                        <outlet property="searchContentsController" destination="aE6-sl-Xdu" id="wvK-Yh-5eB"/>
+                        <outlet property="searchResultsDataSource" destination="aE6-sl-Xdu" id="s04-Up-5cF"/>
+                        <outlet property="searchResultsDelegate" destination="aE6-sl-Xdu" id="aif-fB-lim"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="235" y="139"/>
+        </scene>
+        <!--Choose an experience-->
+        <scene sceneID="DKQ-up-uSG">
+            <objects>
+                <tableViewController id="fUP-uQ-GfV" customClass="ExperienceView" customModule="StoryTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jgc-he-6kM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZaS-KT-h93">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZaS-KT-h93" id="s1i-sj-IQe">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fUP-uQ-GfV" id="LmI-ZR-PDP"/>
+                            <outlet property="delegate" destination="fUP-uQ-GfV" id="Ch5-xo-Eba"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Choose an experience" id="Ylj-OG-dQy"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PrB-1l-wdC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="508" y="818"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GFn-eX-n8e">
+            <objects>
+                <navigationController id="vPN-tV-R9d" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ExN-0a-yh5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fUP-uQ-GfV" kind="relationship" relationship="rootViewController" id="mIB-Sp-FgD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gfo-3S-4yH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-408" y="818"/>
         </scene>
         <!--Video Controller-->
         <scene sceneID="Uoc-7G-5ga">

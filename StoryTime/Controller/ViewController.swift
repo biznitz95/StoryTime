@@ -31,7 +31,7 @@ class ViewController: MainView {
         
         
         
-        performSegue(withIdentifier: "goToVideo", sender: nil)
+        performSegue(withIdentifier: "goToExperienceSelection", sender: nil)
         
     }
     

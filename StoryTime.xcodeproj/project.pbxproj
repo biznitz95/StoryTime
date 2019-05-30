@@ -13,10 +13,26 @@
 		08073FF5229DEC6C00996869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08073FF4229DEC6C00996869 /* Assets.xcassets */; };
 		08073FF8229DEC6C00996869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08073FF6229DEC6C00996869 /* LaunchScreen.storyboard */; };
 		08074000229DEF6800996869 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08073FFF229DEF6800996869 /* VideoController.swift */; };
-		080A95C0229F164000B06808 /* The Cookie Theft Story Final Animation_4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 080A95BF229F164000B06808 /* The Cookie Theft Story Final Animation_4.mp4 */; };
+		080A95C2229F252D00B06808 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080A95C1229F252D00B06808 /* ExperienceView.swift */; };
+		080A95C4229F256000B06808 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080A95C3229F256000B06808 /* ExperienceViewController.swift */; };
 		083BFFA8229EE48E009A11AA /* UIViewController+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BFFA7229EE48E009A11AA /* UIViewController+Functions.swift */; };
 		083BFFAA229EE611009A11AA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083BFFA9229EE611009A11AA /* MainView.swift */; };
 		0843D1D4229F0B650078D784 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843D1D3229F0B650078D784 /* VideoView.swift */; };
+		084E84DA229F577F003697ED /* The Cookie Theft Story Final Animation_4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 084E84CD229F577E003697ED /* The Cookie Theft Story Final Animation_4.mp4 */; };
+		084E84E522A03C53003697ED /* AVPlayer+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084E84E422A03C53003697ED /* AVPlayer+Functions.swift */; };
+		084E84EB22A03E84003697ED /* UITapGestureRecognizer+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084E84EA22A03E84003697ED /* UITapGestureRecognizer+Functions.swift */; };
+		084E84F822A041ED003697ED /* Aerial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 084E84EC22A041EC003697ED /* Aerial.mp4 */; };
+		084E84F922A041ED003697ED /* Rain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 084E84ED22A041EC003697ED /* Rain.mp4 */; };
+		084E84FA22A041ED003697ED /* Bridge.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 084E84EE22A041ED003697ED /* Bridge.mp4 */; };
+		084E84FB22A041ED003697ED /* Milky Way.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 084E84EF22A041ED003697ED /* Milky Way.mp4 */; };
+		084E84FC22A041ED003697ED /* Splash.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 084E84F022A041ED003697ED /* Splash.mp4 */; };
+		084E84FD22A041ED003697ED /* Seoul.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 084E84F122A041ED003697ED /* Seoul.mp4 */; };
+		084E84FE22A041ED003697ED /* Waterfall.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 084E84F222A041ED003697ED /* Waterfall.mp4 */; };
+		084E84FF22A041ED003697ED /* Neon.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 084E84F322A041ED003697ED /* Neon.mp4 */; };
+		084E850022A041ED003697ED /* Double Exposure.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 084E84F422A041ED003697ED /* Double Exposure.mp4 */; };
+		084E850122A041ED003697ED /* Dark.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 084E84F522A041ED003697ED /* Dark.mp4 */; };
+		084E850222A041ED003697ED /* Blue.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 084E84F622A041ED003697ED /* Blue.mp4 */; };
+		084E850322A041ED003697ED /* Fall.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 084E84F722A041ED003697ED /* Fall.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +44,26 @@
 		08073FF7229DEC6C00996869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08073FF9229DEC6C00996869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08073FFF229DEF6800996869 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
-		080A95BF229F164000B06808 /* The Cookie Theft Story Final Animation_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Cookie Theft Story Final Animation_4.mp4"; sourceTree = "<group>"; };
+		080A95C1229F252D00B06808 /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
+		080A95C3229F256000B06808 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
 		083BFFA7229EE48E009A11AA /* UIViewController+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Functions.swift"; sourceTree = "<group>"; };
 		083BFFA9229EE611009A11AA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0843D1D3229F0B650078D784 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		084E84CD229F577E003697ED /* The Cookie Theft Story Final Animation_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Cookie Theft Story Final Animation_4.mp4"; sourceTree = "<group>"; };
+		084E84E422A03C53003697ED /* AVPlayer+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Functions.swift"; sourceTree = "<group>"; };
+		084E84EA22A03E84003697ED /* UITapGestureRecognizer+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+Functions.swift"; sourceTree = "<group>"; };
+		084E84EC22A041EC003697ED /* Aerial.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aerial.mp4; sourceTree = "<group>"; };
+		084E84ED22A041EC003697ED /* Rain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rain.mp4; sourceTree = "<group>"; };
+		084E84EE22A041ED003697ED /* Bridge.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bridge.mp4; sourceTree = "<group>"; };
+		084E84EF22A041ED003697ED /* Milky Way.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Milky Way.mp4"; sourceTree = "<group>"; };
+		084E84F022A041ED003697ED /* Splash.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Splash.mp4; sourceTree = "<group>"; };
+		084E84F122A041ED003697ED /* Seoul.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Seoul.mp4; sourceTree = "<group>"; };
+		084E84F222A041ED003697ED /* Waterfall.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Waterfall.mp4; sourceTree = "<group>"; };
+		084E84F322A041ED003697ED /* Neon.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Neon.mp4; sourceTree = "<group>"; };
+		084E84F422A041ED003697ED /* Double Exposure.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Double Exposure.mp4"; sourceTree = "<group>"; };
+		084E84F522A041ED003697ED /* Dark.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dark.mp4; sourceTree = "<group>"; };
+		084E84F622A041ED003697ED /* Blue.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Blue.mp4; sourceTree = "<group>"; };
+		084E84F722A041ED003697ED /* Fall.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fall.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,18 +96,38 @@
 		08073FEC229DEC6B00996869 /* StoryTime */ = {
 			isa = PBXGroup;
 			children = (
+				080A95C5229F30C000B06808 /* Videos */,
 				083BFFA6229EE447009A11AA /* Extensions */,
 				083BFFA5229EE3D5009A11AA /* Controller */,
 				083BFFA4229EE3CF009A11AA /* View */,
 				083BFFA3229EE3CA009A11AA /* Model */,
 				08073FED229DEC6B00996869 /* AppDelegate.swift */,
-				080A95BF229F164000B06808 /* The Cookie Theft Story Final Animation_4.mp4 */,
 				08073FF1229DEC6B00996869 /* Main.storyboard */,
 				08073FF4229DEC6C00996869 /* Assets.xcassets */,
 				08073FF6229DEC6C00996869 /* LaunchScreen.storyboard */,
 				08073FF9229DEC6C00996869 /* Info.plist */,
 			);
 			path = StoryTime;
+			sourceTree = "<group>";
+		};
+		080A95C5229F30C000B06808 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				084E84CD229F577E003697ED /* The Cookie Theft Story Final Animation_4.mp4 */,
+				084E84EC22A041EC003697ED /* Aerial.mp4 */,
+				084E84F622A041ED003697ED /* Blue.mp4 */,
+				084E84EE22A041ED003697ED /* Bridge.mp4 */,
+				084E84F522A041ED003697ED /* Dark.mp4 */,
+				084E84F422A041ED003697ED /* Double Exposure.mp4 */,
+				084E84F722A041ED003697ED /* Fall.mp4 */,
+				084E84EF22A041ED003697ED /* Milky Way.mp4 */,
+				084E84F322A041ED003697ED /* Neon.mp4 */,
+				084E84ED22A041EC003697ED /* Rain.mp4 */,
+				084E84F122A041ED003697ED /* Seoul.mp4 */,
+				084E84F022A041ED003697ED /* Splash.mp4 */,
+				084E84F222A041ED003697ED /* Waterfall.mp4 */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 		083BFFA3229EE3CA009A11AA /* Model */ = {
@@ -90,6 +142,7 @@
 			children = (
 				083BFFA9229EE611009A11AA /* MainView.swift */,
 				0843D1D3229F0B650078D784 /* VideoView.swift */,
+				080A95C1229F252D00B06808 /* ExperienceView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +152,7 @@
 			children = (
 				08073FEF229DEC6B00996869 /* ViewController.swift */,
 				08073FFF229DEF6800996869 /* VideoController.swift */,
+				080A95C3229F256000B06808 /* ExperienceViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -107,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				083BFFA7229EE48E009A11AA /* UIViewController+Functions.swift */,
+				084E84E422A03C53003697ED /* AVPlayer+Functions.swift */,
+				084E84EA22A03E84003697ED /* UITapGestureRecognizer+Functions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -169,10 +225,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				084E84FE22A041ED003697ED /* Waterfall.mp4 in Resources */,
 				08073FF8229DEC6C00996869 /* LaunchScreen.storyboard in Resources */,
+				084E84DA229F577F003697ED /* The Cookie Theft Story Final Animation_4.mp4 in Resources */,
+				084E84F822A041ED003697ED /* Aerial.mp4 in Resources */,
+				084E84FB22A041ED003697ED /* Milky Way.mp4 in Resources */,
+				084E84FA22A041ED003697ED /* Bridge.mp4 in Resources */,
+				084E850322A041ED003697ED /* Fall.mp4 in Resources */,
 				08073FF5229DEC6C00996869 /* Assets.xcassets in Resources */,
+				084E850122A041ED003697ED /* Dark.mp4 in Resources */,
+				084E84FC22A041ED003697ED /* Splash.mp4 in Resources */,
 				08073FF3229DEC6B00996869 /* Main.storyboard in Resources */,
-				080A95C0229F164000B06808 /* The Cookie Theft Story Final Animation_4.mp4 in Resources */,
+				084E84FD22A041ED003697ED /* Seoul.mp4 in Resources */,
+				084E850022A041ED003697ED /* Double Exposure.mp4 in Resources */,
+				084E84F922A041ED003697ED /* Rain.mp4 in Resources */,
+				084E84FF22A041ED003697ED /* Neon.mp4 in Resources */,
+				084E850222A041ED003697ED /* Blue.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,12 +251,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				080A95C4229F256000B06808 /* ExperienceViewController.swift in Sources */,
 				08073FF0229DEC6B00996869 /* ViewController.swift in Sources */,
 				08074000229DEF6800996869 /* VideoController.swift in Sources */,
 				083BFFA8229EE48E009A11AA /* UIViewController+Functions.swift in Sources */,
 				083BFFAA229EE611009A11AA /* MainView.swift in Sources */,
 				08073FEE229DEC6B00996869 /* AppDelegate.swift in Sources */,
+				080A95C2229F252D00B06808 /* ExperienceView.swift in Sources */,
+				084E84EB22A03E84003697ED /* UITapGestureRecognizer+Functions.swift in Sources */,
 				0843D1D4229F0B650078D784 /* VideoView.swift in Sources */,
+				084E84E522A03C53003697ED /* AVPlayer+Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +413,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cognoa.StoryTime;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BizetRodriguez.cognoa.story-time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,7 +431,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cognoa.StoryTime;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BizetRodriguez.cognoa.story-time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,5 +1,5 @@
 //
-//  MainView.swift
+//  ExperienceView.swift
 //  StoryTime
 //
 //  Created by Bizet Rodriguez-Velez on 5/29/19.
@@ -8,17 +8,12 @@
 
 import UIKit
 
-class MainView: UIViewController {
-    
+class ExperienceView: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
-        
-        keyboardDismiss()
     }
-    
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return .portrait
-    }
-    
+
 }
