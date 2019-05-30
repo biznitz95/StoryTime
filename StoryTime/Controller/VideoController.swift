@@ -51,6 +51,19 @@ class VideoController: VideoView {
         controller.view.addGestureRecognizer(tapRecognizer)
         tapRecognizer.delegate = self as? UIGestureRecognizerDelegate
         
+        let rotate = UIRotationGestureRecognizer(target: self, action: #selector(handleRotation(sender:)))
+        view.addGestureRecognizer(rotate)
+        
+    }
+    
+    @objc func handleRotation(sender: UIRotationGestureRecognizer){
+        guard sender.view != nil else { return }
+        
+        if sender.state == .began || sender.state == .changed {
+            if sender.rotation <= -1.57 {
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
     }
     
     @objc func tapped(gestureRecognizer: UITapGestureRecognizer) {
