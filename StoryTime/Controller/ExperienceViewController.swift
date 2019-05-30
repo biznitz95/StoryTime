@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ExperienceViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ExperienceViewController: ExperienceView {
 
     // MARK: Private IBOutlets
     @IBOutlet private weak var tableView: UITableView!
@@ -39,11 +39,11 @@ class ExperienceViewController: UIViewController, UITableViewDataSource, UITable
     }
     
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reusableExperienceCell") as! CustomeTableViewCell
         
         let text = data[indexPath.row]
@@ -92,7 +92,6 @@ class ExperienceViewController: UIViewController, UITableViewDataSource, UITable
     
     // MARK: Style Function
     func stylize() {
-        view.stylizeView()
         titleLabel.stylizeLabel()
         tableView.stylizeTableView()
     }
