@@ -183,51 +183,6 @@
             </objects>
             <point key="canvasLocation" x="235" y="139"/>
         </scene>
-        <!--Choose an experience-->
-        <scene sceneID="DKQ-up-uSG">
-            <objects>
-                <tableViewController id="fUP-uQ-GfV" customClass="ExperienceView" customModule="StoryTime" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jgc-he-6kM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZaS-KT-h93">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZaS-KT-h93" id="s1i-sj-IQe">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="fUP-uQ-GfV" id="LmI-ZR-PDP"/>
-                            <outlet property="delegate" destination="fUP-uQ-GfV" id="Ch5-xo-Eba"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Choose an experience" id="Ylj-OG-dQy"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PrB-1l-wdC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="508" y="818"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="GFn-eX-n8e">
-            <objects>
-                <navigationController id="vPN-tV-R9d" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ExN-0a-yh5">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="fUP-uQ-GfV" kind="relationship" relationship="rootViewController" id="mIB-Sp-FgD"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Gfo-3S-4yH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-408" y="818"/>
-        </scene>
         <!--Video Controller-->
         <scene sceneID="Uoc-7G-5ga">
             <objects>
