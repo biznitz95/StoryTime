@@ -14,15 +14,10 @@ class CustomeTableViewCell: UITableViewCell {
     
     @IBOutlet weak var label: UILabel!
     
-     let labelTextColor = "#63D6B4"
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        label.layer.borderColor = UIColor.random().cgColor
-        label.backgroundColor = .clear
-        label.layer.borderWidth = 2.0;
-        label.layer.cornerRadius = 15.0
-        label.textColor = UIColor().hexStringToUIColor(hex: labelTextColor)
+        
+        label.stylizeLabelForCell()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

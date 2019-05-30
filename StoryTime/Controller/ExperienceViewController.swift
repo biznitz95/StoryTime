@@ -19,22 +19,14 @@ class ExperienceViewController: UIViewController, UITableViewDataSource, UITable
     private var videoTitle = ""
     
     // MARK: Private Constants
-    let viewBackgroundColor = "#3F5671"
-    let labelTextColor = "#63D6B4"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        titleLabel.textColor = UIColor().hexStringToUIColor(hex: labelTextColor)
 
-        self.view.backgroundColor = UIColor().hexStringToUIColor(hex: viewBackgroundColor)
-        tableView.backgroundColor = UIColor().hexStringToUIColor(hex: viewBackgroundColor)
+        stylize()
         
         tableView.dataSource = self
         tableView.delegate = self
-        
-        tableView.separatorStyle = .none
-        tableView.rowHeight = CGFloat(80)
         
         let videos = Bundle.main.paths(forResourcesOfType: "mp4", inDirectory: nil, forLocalization: nil)
         
@@ -43,8 +35,6 @@ class ExperienceViewController: UIViewController, UITableViewDataSource, UITable
             guard let newTitle = newVideo.split(separator: ".").first else { return }
             data.append(String(newTitle))
         }
-        
-        // Test Code
         
     }
     
@@ -72,6 +62,8 @@ class ExperienceViewController: UIViewController, UITableViewDataSource, UITable
         performSegue(withIdentifier: "goToVideoFromExperience", sender: nil)
     }
     
+    // MARK: Overrides
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToVideoFromExperience" {
             if let nextViewController = segue.destination as? VideoController {
@@ -84,7 +76,7 @@ class ExperienceViewController: UIViewController, UITableViewDataSource, UITable
         return .portrait
     }
     
-    // Test Code
+    // MARK: Gesture Functions
     func addSwipe() {
         let directions: [UISwipeGestureRecognizer.Direction] = [.right, .left, .up, .down]
         for direction in directions {
@@ -96,6 +88,13 @@ class ExperienceViewController: UIViewController, UITableViewDataSource, UITable
     
     func handleSwipe(sender: UISwipeGestureRecognizer) {
         print(sender.direction)
+    }
+    
+    // MARK: Style Function
+    func stylize() {
+        view.stylizeView()
+        titleLabel.stylizeLabel()
+        tableView.stylizeTableView()
     }
     
     // MARK: IBActions

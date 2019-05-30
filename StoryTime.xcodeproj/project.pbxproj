@@ -36,6 +36,11 @@
 		084E850522A04822003697ED /* CustomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084E850422A04822003697ED /* CustomeTableViewCell.swift */; };
 		084E850722A054C8003697ED /* CGFloat+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084E850622A054C8003697ED /* CGFloat+Functions.swift */; };
 		084E850922A054F5003697ED /* UIColor+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084E850822A054F5003697ED /* UIColor+Functions.swift */; };
+		084E850D22A09090003697ED /* UITextField+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084E850C22A09090003697ED /* UITextField+Style.swift */; };
+		084E850F22A09465003697ED /* UIButton+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084E850E22A09465003697ED /* UIButton+Style.swift */; };
+		084E851122A0946F003697ED /* UIView+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084E851022A0946F003697ED /* UIView+Style.swift */; };
+		084E851322A096B8003697ED /* UITableView+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084E851222A096B8003697ED /* UITableView+Style.swift */; };
+		084E851522A0981E003697ED /* UILabel+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084E851422A0981D003697ED /* UILabel+Style.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +75,11 @@
 		084E850422A04822003697ED /* CustomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeTableViewCell.swift; sourceTree = "<group>"; };
 		084E850622A054C8003697ED /* CGFloat+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Functions.swift"; sourceTree = "<group>"; };
 		084E850822A054F5003697ED /* UIColor+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Functions.swift"; sourceTree = "<group>"; };
+		084E850C22A09090003697ED /* UITextField+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Style.swift"; sourceTree = "<group>"; };
+		084E850E22A09465003697ED /* UIButton+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Style.swift"; sourceTree = "<group>"; };
+		084E851022A0946F003697ED /* UIView+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Style.swift"; sourceTree = "<group>"; };
+		084E851222A096B8003697ED /* UITableView+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Style.swift"; sourceTree = "<group>"; };
+		084E851422A0981D003697ED /* UILabel+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Style.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,13 +177,34 @@
 		083BFFA6229EE447009A11AA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				084E850B22A08FB0003697ED /* Style */,
+				084E850A22A08D91003697ED /* Functions */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		084E850A22A08D91003697ED /* Functions */ = {
+			isa = PBXGroup;
+			children = (
 				083BFFA7229EE48E009A11AA /* UIViewController+Functions.swift */,
 				084E84E422A03C53003697ED /* AVPlayer+Functions.swift */,
 				084E84EA22A03E84003697ED /* UITapGestureRecognizer+Functions.swift */,
 				084E850622A054C8003697ED /* CGFloat+Functions.swift */,
 				084E850822A054F5003697ED /* UIColor+Functions.swift */,
 			);
-			path = Extensions;
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		084E850B22A08FB0003697ED /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				084E850C22A09090003697ED /* UITextField+Style.swift */,
+				084E850E22A09465003697ED /* UIButton+Style.swift */,
+				084E851022A0946F003697ED /* UIView+Style.swift */,
+				084E851222A096B8003697ED /* UITableView+Style.swift */,
+				084E851422A0981D003697ED /* UILabel+Style.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +293,10 @@
 			files = (
 				080A95C4229F256000B06808 /* ExperienceViewController.swift in Sources */,
 				08073FF0229DEC6B00996869 /* ViewController.swift in Sources */,
+				084E851122A0946F003697ED /* UIView+Style.swift in Sources */,
+				084E851322A096B8003697ED /* UITableView+Style.swift in Sources */,
 				08074000229DEF6800996869 /* VideoController.swift in Sources */,
+				084E850F22A09465003697ED /* UIButton+Style.swift in Sources */,
 				083BFFA8229EE48E009A11AA /* UIViewController+Functions.swift in Sources */,
 				083BFFAA229EE611009A11AA /* MainView.swift in Sources */,
 				08073FEE229DEC6B00996869 /* AppDelegate.swift in Sources */,
@@ -271,6 +305,8 @@
 				084E84EB22A03E84003697ED /* UITapGestureRecognizer+Functions.swift in Sources */,
 				0843D1D4229F0B650078D784 /* VideoView.swift in Sources */,
 				084E84E522A03C53003697ED /* AVPlayer+Functions.swift in Sources */,
+				084E851522A0981E003697ED /* UILabel+Style.swift in Sources */,
+				084E850D22A09090003697ED /* UITextField+Style.swift in Sources */,
 				084E850522A04822003697ED /* CustomeTableViewCell.swift in Sources */,
 				084E850922A054F5003697ED /* UIColor+Functions.swift in Sources */,
 			);

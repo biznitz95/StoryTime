@@ -14,6 +14,8 @@ class ExperienceView: UITableViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        view.stylizeView()
     }
 
 }

@@ -16,43 +16,11 @@ class ViewController: MainView {
     @IBOutlet weak var startButton: UIButton!
     
     // MARK: Private constants
-    let borderColor = "#63D6B4"
-    let buttonBackgroundColor = "#63D6B4"
-    let placeHolderTextColor = "#459488"
-    let textColor = "#63D6B4"
-    
-    let viewBackgroundColor = "#3F5671"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor().hexStringToUIColor(hex: viewBackgroundColor)
-        
-        nameTextField.layer.borderColor = UIColor().hexStringToUIColor(hex: borderColor).cgColor
-        nameTextField.layer.borderWidth = 2.0
-        nameTextField.layer.cornerRadius = 15.0
-        nameTextField.backgroundColor = .clear
-        nameTextField.attributedPlaceholder = NSAttributedString(
-            string: "Name",
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor().hexStringToUIColor(hex: placeHolderTextColor)]
-        )
-        nameTextField.textColor = UIColor().hexStringToUIColor(hex: textColor)
-        
-        //        nameTextField
-        
-        ageTextField.layer.borderColor = UIColor().hexStringToUIColor(hex: borderColor).cgColor
-        ageTextField.layer.borderWidth = 2.0
-        ageTextField.layer.cornerRadius = 15.0
-        ageTextField.backgroundColor = .clear
-        ageTextField.attributedPlaceholder = NSAttributedString(
-            string: "Age",
-            attributes: [NSAttributedString.Key.foregroundColor: UIColor().hexStringToUIColor(hex: placeHolderTextColor)]
-        )
-        ageTextField.textColor = UIColor().hexStringToUIColor(hex: textColor)
-        
-        startButton.backgroundColor = UIColor().hexStringToUIColor(hex: buttonBackgroundColor)
-        startButton.layer.cornerRadius = 15.0
-        startButton.setTitleColor(UIColor().hexStringToUIColor(hex: viewBackgroundColor), for: .normal)
+        stylize()
     }
     
     // MARK: Private IBActions
@@ -60,12 +28,21 @@ class ViewController: MainView {
         
         guard let name = nameTextField.text, let age = ageTextField.text else { return }
         
+        let allowedCharacters = CharacterSet(charactersIn:"+0123456789 ")
+        guard allowedCharacters.isSuperset(of: CharacterSet(charactersIn: age)) else { return }
+        
         if name.isEmpty || age.isEmpty {
             return
         }
         
         performSegue(withIdentifier: "goToExperienceSelection", sender: nil)
         
+    }
+    
+    func stylize() {
+        nameTextField.stylizeTextField(placeholderText: "Name")
+        ageTextField.stylizeTextField(placeholderText: "Age")
+        startButton.stylizeButton()
     }
     
 }

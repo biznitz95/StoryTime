@@ -15,6 +15,7 @@ class MainView: UIViewController {
         // Do any additional setup after loading the view.
         
         keyboardDismiss()
+        view.stylizeView()
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
