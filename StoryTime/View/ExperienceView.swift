@@ -25,5 +25,9 @@ class ExperienceView: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         return cell
     }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
 
 }

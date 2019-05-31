@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIGestureRecognizerDelegate {
+    
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         if touch.view!.superview!.superclass! .isSubclass(of: UIButton.self) {
             return false

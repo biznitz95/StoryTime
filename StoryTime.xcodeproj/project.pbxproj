@@ -116,7 +116,6 @@
 				083BFFA6229EE447009A11AA /* Extensions */,
 				083BFFA5229EE3D5009A11AA /* Controller */,
 				083BFFA4229EE3CF009A11AA /* View */,
-				083BFFA3229EE3CA009A11AA /* Model */,
 				08073FED229DEC6B00996869 /* AppDelegate.swift */,
 				08073FF1229DEC6B00996869 /* Main.storyboard */,
 				08073FF4229DEC6C00996869 /* Assets.xcassets */,
@@ -144,13 +143,6 @@
 				084E84F222A041ED003697ED /* Waterfall.mp4 */,
 			);
 			path = Videos;
-			sourceTree = "<group>";
-		};
-		083BFFA3229EE3CA009A11AA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		083BFFA4229EE3CF009A11AA /* View */ = {

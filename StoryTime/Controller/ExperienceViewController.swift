@@ -72,10 +72,6 @@ class ExperienceViewController: ExperienceView {
         }
     }
     
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return .portrait
-    }
-    
     // MARK: Gesture Functions
     func addSwipe() {
         let directions: [UISwipeGestureRecognizer.Direction] = [.right, .left, .up, .down]
