@@ -12,9 +12,6 @@ import AVKit
 
 class VideoController: VideoView {
     
-    
-    var videoTitle: String?
-    
     // MARK: Private Constants
     
     
@@ -22,17 +19,28 @@ class VideoController: VideoView {
     private var avPlayer = AVPlayer()
     private var controller = AVPlayerViewController()
     private var videoURL: URL?
+    
+    // MARK: Public Variables
+    public var videoTitle: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let title = videoTitle, let path = Bundle.main.path(forResource: title, ofType: ".mp4") {
-            videoURL = URL(fileURLWithPath: path)
-        } else {
-            guard let path = Bundle.main.path(forResource: "The Cookie Theft Story Final Animation_4", ofType: ".mp4") else { fatalError("Failed to retrieve the video.") }
-            
-            videoURL = URL(fileURLWithPath: path)
-        }
+        // Set up video
+        setUpVideo()
+        
+        // Check for tap and if video is playing
+       setUpGesture()
+        
+    }
+    
+    // MARK: Functions
+    
+    func setUpVideo() {
+        guard let title = videoTitle,
+            let path = Bundle.main.path(forResource: title, ofType: ".mp4") else { return }
+        
+        videoURL = URL(fileURLWithPath: path)
         
         guard let url = videoURL else { fatalError("No URL Found") }
         
@@ -45,15 +53,15 @@ class VideoController: VideoView {
         controller.showsPlaybackControls = false
         
         avPlayer.play()
-        
-        // Check for tap and if video is playing
+    }
+    
+    func setUpGesture() {
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped(gestureRecognizer:)))
         controller.view.addGestureRecognizer(tapRecognizer)
         tapRecognizer.delegate = self as? UIGestureRecognizerDelegate
         
         let rotate = UIRotationGestureRecognizer(target: self, action: #selector(handleRotation(sender:)))
         view.addGestureRecognizer(rotate)
-        
     }
     
     @objc func handleRotation(sender: UIRotationGestureRecognizer){

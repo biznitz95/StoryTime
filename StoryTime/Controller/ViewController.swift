@@ -17,6 +17,8 @@ class ViewController: MainView {
     
     // MARK: Private constants
     
+    // MARK: Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +26,7 @@ class ViewController: MainView {
     }
     
     // MARK: Private IBActions
+    
     @IBAction private func pressedPlay(_ sender: UIButton) {
         
         guard let name = nameTextField.text, let age = ageTextField.text else { return }
@@ -38,6 +41,8 @@ class ViewController: MainView {
         performSegue(withIdentifier: "goToExperienceSelection", sender: nil)
         
     }
+    
+    // MARK: User Interface
     
     func stylize() {
         nameTextField.stylizeTextField(placeholderText: "Name")

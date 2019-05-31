@@ -12,13 +12,15 @@ class ExperienceViewController: ExperienceView {
 
     // MARK: Private IBOutlets
     @IBOutlet private weak var tableView: UITableView!
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
     
     // MARK: Private Variables
     private var data: [String] = []
     private var videoTitle = ""
     
     // MARK: Private Constants
+    
+    // MARL: Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +30,7 @@ class ExperienceViewController: ExperienceView {
         tableView.dataSource = self
         tableView.delegate = self
         
-        let videos = Bundle.main.paths(forResourcesOfType: "mp4", inDirectory: nil, forLocalization: nil)
-        
-        for video in videos {
-            guard let newVideo = video.split(separator: "/").last else { return }
-            guard let newTitle = newVideo.split(separator: ".").first else { return }
-            data.append(String(newTitle))
-        }
+        addVideos()
         
     }
     
@@ -62,7 +58,7 @@ class ExperienceViewController: ExperienceView {
         performSegue(withIdentifier: "goToVideoFromExperience", sender: nil)
     }
     
-    // MARK: Overrides
+    // MARK: Preparing Segue
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToVideoFromExperience" {
@@ -73,6 +69,7 @@ class ExperienceViewController: ExperienceView {
     }
     
     // MARK: Gesture Functions
+    
     func addSwipe() {
         let directions: [UISwipeGestureRecognizer.Direction] = [.right, .left, .up, .down]
         for direction in directions {
@@ -87,9 +84,22 @@ class ExperienceViewController: ExperienceView {
     }
     
     // MARK: Style Function
+    
     func stylize() {
         titleLabel.stylizeLabel()
         tableView.stylizeTableView()
+    }
+    
+    // MARK: Video
+    
+    func addVideos() {
+        let videos = Bundle.main.paths(forResourcesOfType: "mp4", inDirectory: nil, forLocalization: nil)
+        
+        for video in videos {
+            guard let newVideo = video.split(separator: "/").last else { return }
+            guard let newTitle = newVideo.split(separator: ".").first else { return }
+            data.append(String(newTitle))
+        }
     }
     
     // MARK: IBActions
