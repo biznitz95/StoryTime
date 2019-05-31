@@ -15,7 +15,7 @@ class VideoController: VideoView {
     // MARK: Private Constants
     
     
-    // MARK: Private Variables
+    // MARK: Private Variablesgit 
     private var avPlayer = AVPlayer()
     private var controller = AVPlayerViewController()
     private var videoURL: URL?
